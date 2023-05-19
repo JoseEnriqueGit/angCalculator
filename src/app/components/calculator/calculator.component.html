@@ -1,87 +1,194 @@
 <mat-card>
   <mat-form-field>
-    <input matInput placeholder="" />
+    <input matInput placeholder="" value="{{ display }}" />
   </mat-form-field>
 
   <mat-grid-list cols="4" rowHeight="50px">
     <mat-grid-tile>
-      <button id="basic" type="button" mat-button (click)="clicked = true">
+      <button
+        id="basic"
+        name="1"
+        type="button"
+        mat-button
+        (click)="onClick($event)"
+      >
         1
       </button></mat-grid-tile
     >
     <mat-grid-tile>
-      <button id="basic" type="button" mat-button (click)="clicked = true">
+      <button
+        id="basic"
+        name="2"
+        type="button"
+        mat-button
+        (click)="onClick($event)"
+      >
         2
       </button>
     </mat-grid-tile>
     <mat-grid-tile>
-      <button id="basic" type="button" mat-button (click)="clicked = true">
+      <button
+        id="basic"
+        name="3"
+        type="button"
+        mat-button
+        (click)="onClick($event)"
+      >
         3
       </button>
     </mat-grid-tile>
     <mat-grid-tile>
-      <button id="basic" type="button" mat-button (click)="clicked = true">
+      <button
+        id="basic"
+        name="+"
+        type="button"
+        mat-button
+        (click)="onClick($event)"
+      >
         +
       </button>
     </mat-grid-tile>
     <mat-grid-tile>
-      <button id="basic" type="button" mat-button (click)="clicked = true">
+      <button
+        id="basic"
+        name="4"
+        type="button"
+        mat-button
+        (click)="onClick($event)"
+      >
         4
       </button>
     </mat-grid-tile>
     <mat-grid-tile>
-      <button id="basic" type="button" mat-button (click)="clicked = true">
+      <button
+        id="basic"
+        name="5"
+        type="button"
+        mat-button
+        (click)="onClick($event)"
+      >
         5
       </button>
     </mat-grid-tile>
     <mat-grid-tile>
-      <button id="basic" type="button" mat-button (click)="clicked = true">
+      <button
+        id="basic"
+        name="6"
+        type="button"
+        mat-button
+        (click)="onClick($event)"
+      >
         6
       </button>
     </mat-grid-tile>
     <mat-grid-tile>
-      <button id="basic" type="button" mat-button (click)="clicked = true">
+      <button
+        id="basic"
+        name="-"
+        type="button"
+        mat-button
+        (click)="onClick($event)"
+      >
         -
       </button>
     </mat-grid-tile>
     <mat-grid-tile>
-      <button id="basic" type="button" mat-button (click)="clicked = true">
+      <button
+        id="basic"
+        name="7"
+        type="button"
+        mat-button
+        (click)="onClick($event)"
+      >
         7
       </button>
     </mat-grid-tile>
     <mat-grid-tile>
-      <button id="basic" type="button" mat-button (click)="clicked = true">
+      <button
+        id="basic"
+        name="8"
+        type="button"
+        mat-button
+        (click)="onClick($event)"
+      >
         8
       </button>
     </mat-grid-tile>
     <mat-grid-tile>
-      <button id="basic" type="button" mat-button (click)="clicked = true">
+      <button
+        id="basic"
+        name="9"
+        type="button"
+        mat-button
+        (click)="onClick($event)"
+      >
         9
       </button>
     </mat-grid-tile>
     <mat-grid-tile>
-      <button id="basic" type="button" mat-button (click)="clicked = true">
+      <button
+        id="basic"
+        name="*"
+        type="button"
+        mat-button
+        (click)="onClick($event)"
+      >
         X
       </button>
     </mat-grid-tile>
     <mat-grid-tile>
-      <button id="basic" type="button" mat-button (click)="clicked = true">
+      <button
+        id="basic"
+        name="="
+        type="button"
+        mat-button
+        (click)="onClick($event)"
+      >
         =
       </button>
     </mat-grid-tile>
     <mat-grid-tile>
-      <button id="basic" type="button" mat-button (click)="clicked = true">
+      <button
+        id="basic"
+        name="0"
+        type="button"
+        mat-button
+        (click)="onClick($event)"
+      >
         0
       </button>
     </mat-grid-tile>
     <mat-grid-tile>
-      <button id="basic" type="button" mat-button (click)="clicked = true">
+      <button
+        id="basic"
+        name="."
+        type="button"
+        mat-button
+        (click)="onClick($event)"
+      >
         .
       </button>
     </mat-grid-tile>
     <mat-grid-tile>
-      <button id="basic" type="button" mat-button (click)="clicked = true">
+      <button
+        id="basic"
+        name="/"
+        type="button"
+        mat-button
+        (click)="onClick($event)"
+      >
         /
+      </button>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <button
+        id="basic"
+        name="C"
+        type="button"
+        mat-button
+        (click)="onClick($event)"
+      >
+        C
       </button>
     </mat-grid-tile>
   </mat-grid-list>
