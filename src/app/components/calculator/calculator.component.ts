@@ -11,18 +11,27 @@ export class CalculatorComponent {
   onClick(event: any) {
     const value = event.currentTarget.name;
 
-    console.log(event.currentTarget.name);
-
     if (value === '=') {
       try {
-        this.display = eval(this.display).toString();
+        if (this.display === '' || this.display === 'Error') {
+          this.display = this.display = '';
+        } else {
+          this.display = eval(this.display).toString();
+        }
       } catch {
         this.display = 'Error';
       }
     } else if (value === 'C') {
       this.display = '';
+    } else if (value === 'DEL') {
+      this.display = this.display.slice(0, -1);
     } else {
-      this.display = this.display.concat(event.currentTarget.name);
+      if (this.display === 'Error') {
+        this.display = '';
+        this.display = this.display.concat(event.currentTarget.name);
+      } else {
+        this.display = this.display.concat(event.currentTarget.name);
+      }
     }
   }
 }
